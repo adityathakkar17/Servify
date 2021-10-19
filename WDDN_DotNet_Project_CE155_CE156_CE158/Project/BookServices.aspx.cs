@@ -30,6 +30,10 @@ namespace Project
             {
                 Label2.Text = "No SubServices for this Service";
             }
+            else
+            {
+                Label2.Text = "";
+            }
         }
 
         protected void DataList1_ItemCommand(object source, DataListCommandEventArgs e)
@@ -70,13 +74,11 @@ namespace Project
 
                 Cart.Text = "";
                 Cart.Text += "View Cart  Total Price: " + total_Price;
+                Label4.Text = "Total Price: " + total_Price;
                 if (CartItems.Count() >= 1)
                 {
-                    Response.Write("hereee");
                     Cart.Visible = true;
                 }
-
-
                 //ListView1.DataSource = dict;
                 //ListView1.DataBind();
 
@@ -99,7 +101,7 @@ namespace Project
                     }
                     Cart.Text = "";
                     Cart.Text += "View Cart  Total Price: " + total_Price;
-
+                    Label4.Text= "Total Price: " + total_Price;
                     btn.Text = "Add to Cart";
                     btn.CssClass = "btn btn-primary btn-block btn-md";
                     if (CartItems.Count == 0)
@@ -172,7 +174,8 @@ namespace Project
                     btn.Text = "Add to Cart";
                     btn.CssClass = "btn btn-primary btn-block btn-md";
                 }
-                //Response.Write("<script>alert('Service Booked successfully having ID=" + OrderId + "');</script>");
+                Response.Write("<script>alert('Services Booked successfully !');</script>");
+                //Response.Write("<script>alert('Services Booked successfully having ID=" + OrderId + "');</script>");
                 Response.Redirect("CustomerBookings.aspx");
                 
             }

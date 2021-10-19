@@ -32,6 +32,7 @@
                         <div class="row">
                             <div class="col-md-12">
                                 <label>Full Name</label>
+                                <span><asp:RequiredFieldValidator ID="RequiredFieldValidator6" runat="server" ErrorMessage="This field is required" ControlToValidate="CName" ForeColor="Red"></asp:RequiredFieldValidator></span>
                                 <div class="form-group">
                                     <asp:TextBox CssClass="form-control" ID="CName" runat="server" placeholder="Full Name" CausesValidation="True"></asp:TextBox>
                                 </div>
@@ -40,10 +41,11 @@
                         <div class="row">
                             <div class="col-md-12">
                                 <label>Gender</label>
+                                <span><asp:RequiredFieldValidator ID="RequiredFieldValidator7" runat="server" ErrorMessage="This field is required" ControlToValidate="RadioButtonGender" ForeColor="Red"></asp:RequiredFieldValidator></span>
                                 <div class="form-group">
                                     <asp:RadioButtonList ID="RadioButtonGender" runat="server" CssClass="form-control" Height="75px" Width="200px">
                                         <asp:ListItem Value="Male"></asp:ListItem>
-                                        
+                                        <asp:ListItem Value="Female"></asp:ListItem>
                                     </asp:RadioButtonList>
                                 </div>
                             </div>
@@ -51,9 +53,9 @@
                         <div class="row">
                             <div class="col-md-12">
                                 <label>Email ID*</label> &nbsp;
-                                <span><asp:RequiredFieldValidator ID="RequiredFieldValidator1" runat="server" ErrorMessage="This field is required" ControlToValidate="Username" ForeColor="Red"></asp:RequiredFieldValidator></span>
+                                <span><asp:RequiredFieldValidator ID="RequiredFieldValidator1" runat="server" ErrorMessage="This field is required" ControlToValidate="Username" ForeColor="Red"></asp:RequiredFieldValidator><asp:RegularExpressionValidator ID="RegularExpressionValidator1" runat="server" ControlToValidate="Username" ForeColor="Red" ErrorMessage="Invalid Email" ValidationExpression="^([\w-\.]+)@((\[[0-9]{1,3}\.[0-9]{1,3}\.[0-9]{1,3}\.)|(([\w-]+\.)+))([a-zA-Z]{2,4}|[0-9]{1,3})(\]?)$"></asp:RegularExpressionValidator></span>
                                 <div class="form-group">
-                                    <asp:TextBox CssClass="form-control" ID="Username" runat="server" placeholder="Email ID" TextMode="Email"></asp:TextBox>                                    
+                                    <asp:TextBox CssClass="form-control" ID="Username" runat="server" placeholder="Email ID"></asp:TextBox>                                    
                                 </div>
                             </div>
                         </div>
@@ -89,6 +91,7 @@
                             <div class="col-md-12">
                                 <label>Contact No</label> &nbsp;
                                 <span><asp:RequiredFieldValidator ID="RequiredFieldValidator4" runat="server" ControlToValidate="MobileNumber" ErrorMessage="This field is required" ForeColor="Red"></asp:RequiredFieldValidator>
+                                    <asp:RegularExpressionValidator ID="RegularExpressionValidator2" runat="server" ForeColor="Red" ErrorMessage="Enter 10 digit number" ControlToValidate="MobileNumber" ValidationExpression="[0-9]{10}"></asp:RegularExpressionValidator>
 </span>
                                 <div class="form-group">
                                     <asp:TextBox CssClass="form-control" ID="MobileNumber" runat="server" placeholder="Contact No" TextMode="Number"></asp:TextBox>
@@ -115,7 +118,10 @@
                     </div>
                 </div>
             </div>
-
+            <center>
+                <br />
+            <asp:HyperLink CssClass="btn btn-primary ml-lg-2" ID="HyperLink1" NavigateUrl="~/Home.aspx" runat="server">Back to Home</asp:HyperLink>
+        </center> 
         </div>
     </div>
     <br />

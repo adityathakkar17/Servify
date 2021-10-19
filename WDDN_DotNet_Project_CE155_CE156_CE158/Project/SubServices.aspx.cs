@@ -203,7 +203,7 @@ namespace Project
         protected void gv1_RowEditing(object sender, GridViewEditEventArgs e)
         {
             gv1.EditIndex = e.NewEditIndex;
-            Response.Write("<script>alert('editing!')</script>");
+            //Response.Write("<script>alert('editing!')</script>");
             BindGv1();
         }
         protected void gv1_RowUpdating(object sender, GridViewUpdateEventArgs e)

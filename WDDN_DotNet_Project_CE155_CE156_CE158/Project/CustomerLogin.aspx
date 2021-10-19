@@ -11,7 +11,7 @@
                         <div class="row">
                             <div class="col">
                                 <center>
-                                    <img width="150px"  />
+                                    <img src="imgs/generaluser.png" width="150"  />
                                 </center>
                             </div>
                         </div>
@@ -47,14 +47,18 @@
                             <asp:Button class="btn btn-success w-100 btn-lg" ID="login" runat="server" Text="Login" OnClick="Button1_Click" />
                         </div>
                         <div class="m-3">
-                            <a href="usersignup.aspx"><input id="signup" class="btn btn-info w-100 btn-lg" type="button" value="Signup" /></a>
+                            <asp:HyperLink CssClass="btn btn-info w-100 btn-lg" ID="HyperLink2" NavigateUrl="~/CustomerRegistration.aspx" runat="server">Sign Up</asp:HyperLink>
                         </div>
                         </div>
                     </div>
 
                 </div>
-                <a href="homepage.aspx"> << Back to Home</a><br /> <br \>
+               <center>
+            <asp:HyperLink CssClass="btn btn-primary ml-lg-2" ID="HyperLink1" NavigateUrl="~/Home.aspx" runat="server">Back to Home</asp:HyperLink>
+        </center>    
             </div>
         </div>
     </div>
+    <br />
+    <br />
 </asp:Content>

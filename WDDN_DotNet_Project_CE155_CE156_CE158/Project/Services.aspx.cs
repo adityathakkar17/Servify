@@ -132,7 +132,7 @@ namespace Project
         protected void gv1_RowEditing(object sender, GridViewEditEventArgs e)
         {
             gv1.EditIndex = e.NewEditIndex;
-            Response.Write("<script>alert('editing!')</script>");
+            //Response.Write("<script>alert('editing!')</script>");
             Bind();
         }
         protected void gv1_RowUpdating(object sender, GridViewUpdateEventArgs e)
@@ -179,6 +179,7 @@ namespace Project
         }
         protected void gv1_RowDeleting(object sender, GridViewDeleteEventArgs e)
         {
+            Response.Write("<script>alert('All subservices of this service will be deleted')</script>");
             int index = e.RowIndex;
 
             GridViewRow row = (GridViewRow)gv1.Rows[index];

@@ -97,6 +97,7 @@ namespace Project
         {
             Name.Text = "";
             Username.Text = "";
+            Mnumber.Text = "";
         }
     
     }

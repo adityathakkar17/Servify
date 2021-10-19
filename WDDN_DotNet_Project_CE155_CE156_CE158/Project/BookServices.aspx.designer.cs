@@ -51,6 +51,15 @@ namespace Project
         protected global::System.Web.UI.WebControls.Panel CartForm;
 
         /// <summary>
+        /// SS control.
+        /// </summary>
+        /// <remarks>
+        /// Auto-generated field.
+        /// To modify move field declaration from designer file to code-behind file.
+        /// </remarks>
+        protected global::System.Web.UI.HtmlControls.HtmlTextArea SS;
+
+        /// <summary>
         /// Label1 control.
         /// </summary>
         /// <remarks>
@@ -60,13 +69,13 @@ namespace Project
         protected global::System.Web.UI.WebControls.Label Label1;
 
         /// <summary>
-        /// SS control.
+        /// Label4 control.
         /// </summary>
         /// <remarks>
         /// Auto-generated field.
         /// To modify move field declaration from designer file to code-behind file.
         /// </remarks>
-        protected global::System.Web.UI.HtmlControls.HtmlTextArea SS;
+        protected global::System.Web.UI.WebControls.Label Label4;
 
         /// <summary>
         /// btnBook control.

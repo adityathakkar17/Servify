@@ -63,9 +63,10 @@
                          </div>
                           <div class="col-md-3">
                              <label>Mobile Number*</label>
-                             <span><%--<asp:RequiredFieldValidator ID="RequiredMnumber" ControlToValidate="Mnumber" ForeColor="Red" runat="server" ErrorMessage="Enter Your Mobile number"></asp:RequiredFieldValidator>--%></span>
+                             <span><asp:RegularExpressionValidator ID="RegularExpressionValidator2" runat="server" ForeColor="Red" ErrorMessage="Enter 10 digit number" ControlToValidate="Mnumber" ValidationExpression="[0-9]{10}"></asp:RegularExpressionValidator></span>
                              <div class="form-group">
-                                 <asp:TextBox CssClass="form-control" required="true"  ID="Mnumber" runat="server" placeholder="Mobile Number" TextMode="Phone"></asp:TextBox>
+                                 
+                                 <asp:TextBox CssClass="form-control" required="true"  ID="Mnumber" runat="server" placeholder="Mobile Number" MaxLength="10"></asp:TextBox>
                              </div>
                          </div>
                         
@@ -74,7 +75,7 @@
                              <label>Applying for : *</label><br />
                              <asp:DropDownList ID="ServicesList" runat="server" DataSourceID="SqlDataSource1" DataTextField="ServiceName" DataValueField="Id" Height="48px" Width="214px"></asp:DropDownList>
 
-                             <asp:SqlDataSource ID="SqlDataSource1" runat="server" ConnectionString="<%$ ConnectionStrings:ConnectionString %>" SelectCommand="SELECT [Id], [ServiceName] FROM [Service]"></asp:SqlDataSource>
+                             <asp:SqlDataSource ID="SqlDataSource1" runat="server" ConnectionString="<%$ ConnectionStrings:ConnectionString %>" SelectCommand="SELECT [Id], [ServiceName] FROM [Service] "></asp:SqlDataSource>
                          </div>                 
                          
                      </div>

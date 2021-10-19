@@ -21,15 +21,13 @@
 </head>
 <body>
 
-
-
-
     <form id="form1" runat="server">
         <header>
-            <nav class="navbar navbar-expand-lg navbar-light bg-white sticky" data-offset="500" >
+            <nav class="navbar navbar-expand-lg navbar-light bg-white sticky" data-offset="500">
                 <div class="container">
                     <asp:HyperLink CssClass="navbar-brand" ID="HyperLink1" NavigateUrl="~/Home.aspx" runat="server"><i>Services<span class="text-primary">Booking</span>System</i></asp:HyperLink>
-                    <h5><asp:Label class="badge badge-pill badge-primary " ID="Label1" runat="server" Text=""></asp:Label></h5>
+                    <h5>
+                        <asp:Label class="badge badge-pill badge-primary " ID="Label1" runat="server" Text=""></asp:Label></h5>
                     <%--<a href="#" class="navbar-brand"><i>Services<span class="text-primary">Booking</span>System</i></a>--%>
                     <!-- <a class="nav-link" href="service.html">Services</a> -->
                     <button class="navbar-toggler" data-toggle="collapse" data-target="#navbarContent" aria-controls="navbarContent" aria-expanded="false" aria-label="Toggle navigation">
@@ -39,27 +37,27 @@
                     <div class="navbar-collapse collapse" id="navbarContent">
                         <ul class="navbar-nav ml-auto">
                             <li class="nav-item active">
-                                <asp:HyperLink class="nav-link" NavigateUrl="~/Home.aspx" runat="server">Home</asp:HyperLink>
+                                <asp:HyperLink class="btn btn-warning ml-lg-2" NavigateUrl="~/Home.aspx" runat="server">Home </asp:HyperLink>
                             </li>
                             <li class="nav-item">
-                                <asp:HyperLink class="nav-link" ID="ApplyProfessional" NavigateUrl="~/StaffRegistration.aspx" runat="server">Apply as Professional</asp:HyperLink>
+                                <asp:HyperLink class="btn btn-dark ml-lg-2" ID="ApplyProfessional" NavigateUrl="~/StaffRegistration.aspx" runat="server">Apply as Professional</asp:HyperLink>
                             </li>
                             <li class="nav-item">
-                                <asp:HyperLink class="nav-link" ID="AdminHome" Visible="false" NavigateUrl="~/AdminHome.aspx" runat="server">Admin Home</asp:HyperLink>
+                                <asp:HyperLink class="btn btn-dark ml-lg-2" ID="AdminHome" Visible="false" NavigateUrl="~/AdminHome.aspx" runat="server">Admin Home</asp:HyperLink>
                             </li>
                             <li class="nav-item">
                                 <!-- <a class="nav-link" href="blog.html">Blog</a> -->
                             </li>
                             <li class="nav-item">
-                                <asp:HyperLink class="nav-link" ID="Bookings" Visible="false" NavigateUrl="~/CustomerBookings.aspx" runat="server">My Bookings</asp:HyperLink>
+                                <asp:HyperLink class="btn btn-dark ml-lg-2" ID="Bookings" Visible="false" NavigateUrl="~/CustomerBookings.aspx" runat="server">My Bookings</asp:HyperLink>
                             </li>
                             <li class="nav-item">
                                 <asp:HyperLink class="btn btn-primary ml-lg-2" ID="Signup" NavigateUrl="~/CustomerRegistration.aspx" runat="server">Sign Up</asp:HyperLink>
                             </li>
 
                             <li class="nav-item">
-                                <asp:HyperLink class="btn btn-primary ml-lg-2" ID="Login" NavigateUrl="~/CustomerLogin.aspx" runat="server" style="height: 39px">Log In</asp:HyperLink>
-                                
+                                <asp:HyperLink class="btn btn-primary ml-lg-2" ID="Login" NavigateUrl="~/CustomerLogin.aspx" runat="server" Style="height: 39px">Log In</asp:HyperLink>
+
                             </li>
 
                             <li class="nav-item">
@@ -72,7 +70,6 @@
                 </div>
             </nav>
 
-
         </header>
         <div>
             <nav></nav>
@@ -81,55 +78,46 @@
         </div>
         <footer class="page-footer bg-image" style="background-image: url(../assets/img/world_pattern.svg);">
             <div class="container">
-                <div class="row mb-5">
-                    <div class="col-lg-3 py-3">
+                <div class="row md-12">
+                    <center>
                         <h3>Services Booking System</h3>
-                        <p>ASP .NET PROJECT</p>
-                        <p>ADITYA THAKKAR(CE-155)</p>
-                        <p>SAGAR THAKKAR(CE-156)</p>
-                        <p>HARSH THUMAR(CE-158)</p>
-                        <div class="social-media-button">
-                            <a href="#"><span class="mai-logo-facebook-f"></span></a>
-                            <a href="#"><span class="mai-logo-twitter"></span></a>
-                            <a href="#"><span class="mai-logo-google-plus-g"></span></a>
-                            <a href="#"><span class="mai-logo-instagram"></span></a>
-                            <a href="#"><span class="mai-logo-youtube"></span></a>
-                        </div>
+                    </center>
+                </div>
+                <div class="row md-12" >
+                    <center>
+                        <p style="color:white">ASP .NET PROJECT</p>
+                    </center>
+                </div>
+                <div class="row md-12">
+                    <div class="col-md-4">
+                        <center>
+                            <h5>ADITYA THAKKAR(CE-155)</h5>
+                        </center>
                     </div>
-                    
-                    <div class="col-md-2 py-3 mx-auto">
-                      <%--  <h5>Contact Us</h5>
-                        <p></p>
-                        <a href="#" class="footer-link">+00 1122 3344 5566</a>
-                        <a href="#" class="footer-link">seogram@temporary.com</a>--%>
+                    <div class="col-md-4">
+                        <center>
+                            <h5>SAGAR THAKKAR(CE-156)</h5>
+                        </center>
                     </div>
-                    <div class="col-lg-3 py-3 ml-auto">
-                        <h5>Newsletter</h5>
-                        <p>Get updates, news or events on your mail.</p>
-                        <form action="#">
-                            <input type="text" class="form-control" placeholder="Enter your email..">
-                            <button type="submit" class="btn btn-success btn-block mt-2">Subscribe</button>
-                            <asp:HyperLink class=" btn btn-success btn-block  btn-sm" ID="AdminLogin" NavigateUrl="~/AdminLogin.aspx" runat="server" style="height: 39px">Admin Login</asp:HyperLink>
-                        </form>
+                    <div class="col-md-4">
+                        <center>
+                            <h5>HARSH THUMAR(CE-158)</h5>
+                        </center>
                     </div>
                 </div>
-
-                <div id="footer1" class="container-fluid">
-                    <div class="row">
-                        <div class="col-md-3  mx-auto">
-                                <%--<asp:HyperLink class=" btn btn-success btn-block  btn-sm" ID="AdminLogin" NavigateUrl="~/AdminLogin.aspx" runat="server" style="height: 39px">Admin Login</asp:HyperLink>--%>
-
-                              
-                            &nbsp;
+                <br />
+                <div class="row md-12">
+                    <center>
+                        <div class="col-md-4">
+                            <asp:HyperLink class=" btn btn-success btn-block  btn-sm" ID="AdminLogin" NavigateUrl="~/AdminLogin.aspx" runat="server" Style="height: 39px">Admin Login</asp:HyperLink>
                         </div>
-                    </div>
-                    <!-- <p class="text-center" id="copyright">Copyright &copy; 2020. <a href="https://macodeid.com/" target="_blank">Log In as Admin</a></p> -->
+                    </center>
                 </div>
+            </div>
+            <br /><br /><br />
         </footer>
+       
     </form>
-
-
-
 
 </body>
 </html>

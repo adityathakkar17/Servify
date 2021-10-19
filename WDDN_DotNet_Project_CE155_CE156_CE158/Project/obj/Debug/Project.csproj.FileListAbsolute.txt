@@ -115,3 +115,4 @@ D:\DDU-SEM5\WDDN\NET Project\WDDN_DotNet_Project_CE155_CE156_CE158\Project\obj\D
 D:\DDU-SEM5\WDDN\NET Project\WDDN_DotNet_Project_CE155_CE156_CE158\Project\obj\Debug\Project.csproj.CopyComplete
 D:\DDU-SEM5\WDDN\NET Project\WDDN_DotNet_Project_CE155_CE156_CE158\Project\obj\Debug\Project.dll
 D:\DDU-SEM5\WDDN\NET Project\WDDN_DotNet_Project_CE155_CE156_CE158\Project\obj\Debug\Project.pdb
+D:\DDU-SEM5\WDDN\NET Project\WDDN_DotNet_Project_CE155_CE156_CE158\Project\obj\Debug\Project.csproj.AssemblyReference.cache

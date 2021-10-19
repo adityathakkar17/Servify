@@ -36,7 +36,7 @@ namespace Project.Customer
                     Session["role"] = "user";
                     Response.Redirect("Home.aspx");
                 }
-
+                con.Close();
                 Response.Write("<script>alert('Invalid Credentials !!');</script>");
 
             }

@@ -106,7 +106,6 @@
     <Content Include="CustomerList.aspx" />
     <Content Include="CustomerLogin.aspx" />
     <Content Include="Global.asax" />
-    <Content Include="HtmlPage1.html" />
     <Content Include="images\amc-plan.png" />
     <Content Include="images\carpentry.png" />
     <Content Include="images\cctv.png" />
@@ -136,7 +135,6 @@
     <Content Include="imgs\search-online.png" />
     <Content Include="imgs\sign-up.png" />
     <Content Include="imgs\writer.png" />
-    <Content Include="index1.html" />
     <Content Include="lib\bootstrap\css\bootstrap-grid.css" />
     <Content Include="lib\bootstrap\css\bootstrap-grid.min.css" />
     <Content Include="lib\bootstrap\css\bootstrap-grid.rtl.css" />
@@ -159,11 +157,33 @@
     <Content Include="lib\bootstrap\js\bootstrap.esm.min.js" />
     <Content Include="lib\bootstrap\js\bootstrap.js" />
     <Content Include="lib\bootstrap\js\bootstrap.min.js" />
+    <Content Include="ServiceImages\amc-plan.png" />
+    <Content Include="ServiceImages\book-online.png" />
+    <Content Include="ServiceImages\books.png" />
+    <Content Include="ServiceImages\carpentry.png" />
+    <Content Include="ServiceImages\cctv.png" />
+    <Content Include="ServiceImages\CustomerRegistration.aspx" />
+    <Content Include="ServiceImages\digital-data.png" />
+    <Content Include="ServiceImages\digital-inventory.png" />
+    <Content Include="ServiceImages\ele-icon.png" />
+    <Content Include="ServiceImages\library.png" />
+    <Content Include="ServiceImages\plumbing.png" />
+    <Content Include="ServiceImages\publisher.png" />
+    <Content Include="ServiceImages\search-online.png" />
+    <Content Include="ServiceImages\sign-up.png" />
+    <Content Include="ServiceImages\writer.png" />
     <Content Include="StaffList.aspx" />
     <Content Include="StaffRegistration.aspx" />
+    <Content Include="SubServiceImages\book-online.png" />
+    <Content Include="SubServiceImages\digital-data.png" />
+    <Content Include="SubServiceImages\digital-inventory.png" />
+    <Content Include="SubServiceImages\publisher.png" />
+    <Content Include="SubServiceImages\search-online.png" />
+    <Content Include="SubServiceImages\services.jpeg" />
+    <Content Include="SubServiceImages\sign-up.png" />
+    <Content Include="SubServiceImages\water-purifier.png" />
     <Content Include="Web.config" />
     <Content Include="CustomerRegistration.aspx" />
-    <Content Include="Services1.aspx" />
     <Content Include="Services.aspx" />
     <Content Include="CustomerBookings.aspx" />
     <Content Include="SubServices.aspx" />
@@ -224,13 +244,6 @@
     </Compile>
     <Compile Include="CustomerRegistration.aspx.designer.cs">
       <DependentUpon>CustomerRegistration.aspx</DependentUpon>
-    </Compile>
-    <Compile Include="Services1.aspx.cs">
-      <DependentUpon>Services1.aspx</DependentUpon>
-      <SubType>ASPXCodeBehind</SubType>
-    </Compile>
-    <Compile Include="Services1.aspx.designer.cs">
-      <DependentUpon>Services1.aspx</DependentUpon>
     </Compile>
     <Compile Include="Services.aspx.cs">
       <DependentUpon>Services.aspx</DependentUpon>
@@ -410,13 +423,7 @@
       <DependentUpon>Web.config</DependentUpon>
     </None>
   </ItemGroup>
-  <ItemGroup>
-    <Folder Include="Admin\" />
-    <Folder Include="Database_tables\" />
-    <Folder Include="ServiceImages\" />
-    <Folder Include="Staff\" />
-    <Folder Include="SubServiceImages\" />
-  </ItemGroup>
+  <ItemGroup />
   <PropertyGroup>
     <VisualStudioVersion Condition="'$(VisualStudioVersion)' == ''">10.0</VisualStudioVersion>
     <VSToolsPath Condition="'$(VSToolsPath)' == ''">$(MSBuildExtensionsPath32)\Microsoft\VisualStudio\v$(VisualStudioVersion)</VSToolsPath>

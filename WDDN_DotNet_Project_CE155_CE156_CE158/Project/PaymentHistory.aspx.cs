@@ -28,7 +28,7 @@ namespace Project
             {
                 try
                 {
-                    SqlCommand cmd = new SqlCommand("SELECT O.Date , O.TotalAmount AS Amount, O.TotalServices,O.CustomerId FROM [Order] O ");
+                    SqlCommand cmd = new SqlCommand("SELECT O.Date , O.TotalAmount AS Amount, O.TotalServices,O.CustomerId,C.Username FROM [Order] O INNER JOIN  Customer C ON O.CustomerId=C.Id ");
                     cmd.Connection = con;
                     SqlDataReader rdr = cmd.ExecuteReader();
                     GridView1.DataSource = rdr;

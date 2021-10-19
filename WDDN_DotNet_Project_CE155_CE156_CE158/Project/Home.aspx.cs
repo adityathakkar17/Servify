@@ -11,7 +11,11 @@ namespace Project
     {
         protected void Page_Load(object sender, EventArgs e)
         {
-            
+            if(Session["newuser"]!=null && !Session["newUser"].Equals(""))
+            {
+                Response.Write("<script>alert('Sign Up Successful.');</script>");
+                Session.Remove("newUser");
+            }
         }
     }
 }

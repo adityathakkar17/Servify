@@ -8,7 +8,7 @@
                     <div class="row">
                         <div class="col">
                             <center>
-                                <img width="100px" src="images/payment.png" class="auto-style1" />
+                                <img width="100" src="images/payment.png" class="auto-style1" />
                             </center>
                         </div>
                     </div>

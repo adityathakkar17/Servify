@@ -33,7 +33,7 @@ namespace Project
         }
         public void Bind()
         {
-            SqlCommand cmd = new SqlCommand("select * from Staff where IsVerified=0", con);
+            SqlCommand cmd = new SqlCommand("SELECT S.Id,S.Username,S.StaffName,S.MobileNumber,S.ServiceId,SS.ServiceName,S.IsVerified FROM Staff S INNER JOIN Service SS ON S.ServiceId=SS.Id   WHERE S.IsVerified = 0", con);
             SqlDataAdapter da = new SqlDataAdapter(cmd);
 
             DataSet ds = new DataSet();

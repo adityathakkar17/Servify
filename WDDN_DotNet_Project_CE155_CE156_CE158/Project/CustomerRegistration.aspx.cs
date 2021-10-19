@@ -22,6 +22,7 @@ namespace Project
         {
             if(!checkMemberExists())
             {
+                int Id = -1;
                 try
                 {
                     SqlConnection con = new SqlConnection(strcon);
@@ -29,17 +30,23 @@ namespace Project
                     {
                         con.Open();
                     }
-                    SqlCommand cmd = new SqlCommand("INSERT INTO Customer(CName,Username,Password,MobileNumber,Gender,Address) values(@CName,@Username,@Password,@MobileNumber,@Gender,@Address)", con);
+                    SqlCommand cmd = new SqlCommand("INSERT INTO Customer(CName,Username,Password,MobileNumber,Gender,Address) OUTPUT INSERTED.ID values(@CName,@Username,@Password,@MobileNumber,@Gender,@Address)", con);
                     cmd.Parameters.AddWithValue("@CName", CName.Text.Trim());
                     cmd.Parameters.AddWithValue("@Username", Username.Text.Trim());
                     cmd.Parameters.AddWithValue("@Password", Password.Text.Trim());
                     cmd.Parameters.AddWithValue("@MobileNumber", MobileNumber.Text.Trim());
                     cmd.Parameters.AddWithValue("@Gender", RadioButtonGender.SelectedItem.Value);
                     cmd.Parameters.AddWithValue("@Address", Address.Text.Trim());
-                    cmd.ExecuteNonQuery();
+                    Id = (int)cmd.ExecuteScalar();
+                    Response.Write(Id);
                     con.Close();
-                    Response.Redirect("");
-                    Response.Write("<script>alert('Sign Up Successful. Go to User Login to Login');</script>");
+                    if (Id >= 1)
+                    {
+                        Session["UserId"] = Id;
+                        Session["role"] = "user";
+                        Session["newUser"]="Sign Up Successful";
+                        Response.Redirect("Home.aspx",false);
+                    }
                 }
                 catch (Exception ex)
                 {

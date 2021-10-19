@@ -1,14 +1,15 @@
 ﻿<%@ Page Title="" Language="C#" MasterPageFile="~/Site1.Master" AutoEventWireup="true" CodeBehind="CustomerList.aspx.cs" Inherits="Project.CustomerList" %>
+
 <asp:Content ID="Content1" ContentPlaceHolderID="head" runat="server">
 </asp:Content>
 <asp:Content ID="Content2" ContentPlaceHolderID="ContentPlaceHolder1" runat="server">
-    <div class="col-md-6 mx-auto ">
+    <div class="col-md-8 mx-auto ">
         <div class="card">
             <div class="card-body">
                 <div class="row">
                     <div class="col">
                         <center>
-                            <img width="100px" src="~/imgs/generaluser.png" class="auto-style1" />
+                            <img width="100px" src="../imgs/generaluser.png" class="auto-style1" />
                             <h4>Customer List</h4>
                         </center>
                     </div>
@@ -73,4 +74,10 @@
 
         </div>
     </div>
+    <br />
+    <center>
+        <asp:HyperLink CssClass="btn btn-primary ml-lg-2" ID="HyperLink1" NavigateUrl="~/AdminHome.aspx" runat="server">Back to Home</asp:HyperLink>
+    </center>
+    <br />
+    <br />
 </asp:Content>

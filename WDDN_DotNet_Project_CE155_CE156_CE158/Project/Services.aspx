@@ -10,7 +10,7 @@
                     <div class="row">
                         <div class="col">
                             <center>
-                                <img width="100px" src="imgs/generaluser.png" class="auto-style1" />
+                                <img width="100" src="imgs/generaluser.png" class="auto-style1" />
                             </center>
                         </div>
                     </div>
@@ -122,8 +122,7 @@
                         </div>
                     </div>
                 </div>
-                <a href=""><< Back to Home</a>
             </div>
     </div>
-    
+    <br />
 </asp:Content>

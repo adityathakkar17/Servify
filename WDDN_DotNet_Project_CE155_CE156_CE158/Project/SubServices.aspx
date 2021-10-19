@@ -155,7 +155,6 @@
                 </div>
             </div>
         </div>
-        <a href=""><< Back to Home</a>
     </div>
     </div>
 </asp:Content>

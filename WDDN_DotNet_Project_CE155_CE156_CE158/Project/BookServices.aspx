@@ -25,7 +25,7 @@
         /* The popup chat - hidden by default */
         .chat-popup {
             position: absolute;
-            bottom: 150px;
+            bottom: 120px;
             right: 15px;
             border: 3px solid #f1f1f1;
             z-index: 9;
@@ -86,11 +86,14 @@
         <asp:Panel CssClass="chat-popup" ID="MyCartList" Visible="false" runat="server">
             <asp:Panel CssClass="form-container" ID="CartForm" runat="server">
                 <h1>Cart</h1>
-                <asp:Label ID="Label1" runat="server" Text="SubServices"></asp:Label>
+                
                 <br />
                 <textarea id="SS" placeholder="Type message.." name="msg" runat="server"></textarea>
+                <asp:Label ID="Label1" runat="server" Text="SubServices"></asp:Label><br />
+                <b><asp:Label ID="Label4" runat="server" Text=""></asp:Label></b>
                 <asp:Button ID="btnBook" CssClass="btn" runat="server" Text="Book" OnClick="btnBook_Click" />
                 <asp:Button ID="btnCancel" CssClass="btn cancel" runat="server" Text="Cancel" OnClick="btnCancel_Click" />
+                
             </asp:Panel>
         </asp:Panel>
     </asp:Panel>
