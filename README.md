@@ -2,10 +2,20 @@
 A web application built using ASP.NET which serves as an eco-system that seamlessly connects users with skilled professionals for a variety of household services. It features functionalities for users, professionals/skilled laborers, and an admin.
 
 ## Technologies Used
-- **Backend:** ASP.NET
-- **Frontend:** HTML, CSS, JavaScript
-- **Database:** SQL Server
-- **Tools:** Visual Studio, NuGet
+- **Backend:** ![.NET Core](https://img.shields.io/badge/ASP.NET-512BD4?style=for-the-badge&logo=.net&logoColor=white)
+![C#](https://img.shields.io/badge/C%23-239120?style=for-the-badge&logo=c-sharp&logoColor=white)
+
+- **Frontend:** ![HTML5](https://img.shields.io/badge/HTML5-E34F26?style=for-the-badge&logo=html5&logoColor=white)
+![CSS3](https://img.shields.io/badge/CSS3-1572B6?style=for-the-badge&logo=css3&logoColor=white)
+![JavaScript](https://img.shields.io/badge/JavaScript-F7DF1E?style=for-the-badge&logo=javascript&logoColor=black)
+
+- **Database:**
+![SQL Server](https://img.shields.io/badge/SQL%20Server-CC2927?style=for-the-badge&logo=microsoft-sql-server&logoColor=white)
+
+- **Tools:** 
+![Visual Studio](https://img.shields.io/badge/Visual%20Studio-5C2D91?style=for-the-badge&logo=visual-studio&logoColor=white)
+![NuGet](https://img.shields.io/badge/NuGet-004880?style=for-the-badge&logo=nuget&logoColor=white)
+
 # Services Booking System
 
 <img width="1195" alt="Screenshot 2025-01-21 at 4 04 58 PM" src="https://github.com/user-attachments/assets/4a078e2a-c9bb-4bc4-a684-e8b2421a707b" />
