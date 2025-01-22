@@ -50,10 +50,6 @@ A web application built using ASP.NET which serves as an eco-system that seamles
 
 <img width="1451" alt="Screenshot 2025-01-21 at 4 31 24 PM" src="https://github.com/user-attachments/assets/fdddc2f7-6ba7-4480-bb4e-d4270bb7c19f" />
 
-## Screenshots
-
-![Services Booking System Screenshot](./path-to-screenshot.png)
-
 ## How to Run the Project
 
 Follow these steps to run the project locally:
